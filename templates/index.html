@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Blog.</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+	<style>
+		* {
+			font-family: 'Roboto', sans-serif;
+		}
+		
+		body {
+			max-width: 650px;
+			margin: 0 auto;
+		}
+
+		.logo {
+			font-weight: 700;
+			text-align: center;
+		}
+
+		#content {
+			height: 50vh;
+			resize: vertical;
+			margin: 0px 25px;
+			font-size: 1.1em;
+			font-weight: 400;
+			padding: 5px;
+		}
+
+		.input {
+			margin: 30px 25px 10px;
+			font-size: 1.5em;
+			font-weight: 500;
+			border-bottom: 1px solid #ddd !important; 
+			padding: 0 5px 12px;
+		}
+
+		.input:focus, #content:focus {
+			outline: none
+		}
+
+		.input, #content {
+			width: 100%;
+			border: none;
+		}
+
+		#post-title {
+			border-bottom: 2px solid #000;
+			margin: 40px 25px 0;
+			font-weight: 500;
+			padding: 5px;
+			font-size: 1.5em;
+		}
+
+		#post-content {
+			padding:  5px; 
+			margin: 10px 25px; 
+			text-align: justify;
+			font-size: 1.1em;
+		}
+		
+		a {
+			color:#000;
+			text-decoration: none;
+		}
+
+	</style>
+</head>
+<body>
+	<a href="/blog"><h2 class="logo">Blog.</h2></a>
+	
+	{% block home %}
+	{% endblock %}
+
+	{% block article %}
+	{% endblock %}
+
+	
+</body>
+</html>

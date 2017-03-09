@@ -1,0 +1,14 @@
+{% extends "index.html" %}
+
+{% block article %}
+	
+	<h4 style="text-align: center;color: red;margin-top:40px ">{{ error }}</h4>
+
+	<form method="post">
+		<input type="text" name="title" class="input" placeholder="Title">
+		<textarea name="content" id="content" placeholder="Content"></textarea>	
+		<input type="image" src="templates/img/done.svg" alt="Submit" name="submit">
+		<img src="/templates/done.svg">
+	</form>
+
+{% endblock %}

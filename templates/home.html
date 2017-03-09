@@ -1,0 +1,10 @@
+{% extends "index.html" %}
+
+{% block home %}
+
+	{% for article in articles %}	
+		<h3 id="post-title">{{ article.title }}</h3>
+		<p id="post-content">{{ article.content }}</p>
+	{% endfor %}	
+	
+{% endblock %}
